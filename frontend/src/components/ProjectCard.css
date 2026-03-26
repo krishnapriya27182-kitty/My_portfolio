@@ -1,0 +1,112 @@
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--t), transform var(--t);
+}
+
+.project-card:hover {
+  border-color: rgba(108, 99, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+.project-thumb {
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.4) 100%);
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  padding: 0.85rem 1rem 0;
+}
+
+.project-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.project-tag.react   { color: #61dafb; border-color: rgba(97,218,251,0.25); background: rgba(97,218,251,0.06); }
+.project-tag.node    { color: #68d391; border-color: rgba(104,211,145,0.25); background: rgba(104,211,145,0.06); }
+.project-tag.ts      { color: #667eea; border-color: rgba(102,126,234,0.25); background: rgba(102,126,234,0.06); }
+.project-tag.next    { color: #a0aec0; border-color: rgba(160,174,192,0.25); background: rgba(160,174,192,0.06); }
+.project-tag.default { color: var(--muted2); border-color: var(--border); background: transparent; }
+
+.project-body {
+  padding: 0.75rem 1rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-footer {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1rem 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted2);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all var(--t);
+}
+
+.project-link:hover {
+  border-color: var(--accent);
+  color: var(--accent2);
+}
+
+.project-link.demo {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.project-link.demo:hover {
+  background: var(--accent2);
+  border-color: var(--accent2);
+  color: #fff;
+}
