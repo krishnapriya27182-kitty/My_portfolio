@@ -92,9 +92,8 @@ export default function Home() {
         <div className="container">
           <div className="hero-badge">Available for work</div>
           <p className="hero-intro">I&apos;m</p>
-          {/* TODO: Replace with your name */}
           <h1 className="hero-name">
-            <span className="highlight">Your Name.</span>
+            <span className="highlight">Renika J.</span>
           </h1>
           <p className="hero-role">AI &amp; ML Engineer.</p>
           <p className="hero-desc">
@@ -114,11 +113,9 @@ export default function Home() {
         <div className="container">
           <p className="section-label">This Chapter</p>
           <div className="about-grid">
-            {/* TODO: Replace with your photo — add image to frontend/public/photo.jpg */}
+            {/* Replace photo.jpg in frontend/public/ with your photo */}
             <div className="about-image-wrap">
-              <div className="about-image-placeholder">
-                <span className="photo-hint">📷<br />Add your photo here</span>
-              </div>
+              <img src="/photo.jpg" alt="Renika J" className="about-photo" />
             </div>
             <div>
               <h2 className="about-title">Bridging Intelligence and Craft</h2>
@@ -203,8 +200,7 @@ export default function Home() {
               <ul className="contact-info-list">
                 <li className="contact-info-item">
                   <span className="contact-info-icon">✉</span>
-                  {/* TODO: Replace with your email */}
-                  your.email@example.com
+                  jagadeesh718@gmail.com
                 </li>
                 <li className="contact-info-item">
                   <span className="contact-info-icon">📍</span>

@@ -8,12 +8,8 @@ export default function About() {
         <h1 className="page-title">About Me</h1>
 
         <div className="about-grid">
-          {/* TODO: Replace with your photo — add image to frontend/public/photo.jpg
-              and change the div below to: <img src="/photo.jpg" alt="Your Name" /> */}
           <div className="about-image-wrap">
-            <div className="about-image-placeholder">
-              <span className="photo-hint">📷<br />Add your photo here</span>
-            </div>
+            <img src="/photo.jpg" alt="Renika J" className="about-photo" />
           </div>
 
           <div className="about-content">

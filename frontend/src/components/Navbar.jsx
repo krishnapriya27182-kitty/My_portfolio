@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-          Dev<span>Portfolio</span>
+          Renika<span> J</span>
         </Link>
 
         <button

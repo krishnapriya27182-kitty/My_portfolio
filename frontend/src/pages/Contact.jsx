@@ -57,7 +57,7 @@ export default function Contact() {
               <li className="contact-info-item">
                 <span className="contact-info-icon">✉</span>
                 {/* TODO: Replace with your email */}
-                your.email@example.com
+                jagadeesh718@gmail.com
               </li>
               <li className="contact-info-item">
                 <span className="contact-info-icon">📍</span>

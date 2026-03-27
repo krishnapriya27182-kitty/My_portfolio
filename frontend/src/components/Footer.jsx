@@ -4,9 +4,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        {/* TODO: Replace with your name */}
         <span className="footer-logo">
-          Dev<span>Portfolio</span>
+          Renika<span> J</span>
         </span>
         <p className="footer-copy">
           &copy; {new Date().getFullYear()} Student Developer. Crafted with Passion.
